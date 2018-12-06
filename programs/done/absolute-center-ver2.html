@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Examples</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
+    <style>
+          p {
+            text-transform: uppercase;
+            padding: 3px;
+        }
+
+        .container {
+            width: 90%;
+            height: 200px;
+            border: blue 3px solid;
+
+            /* important rules */
+            position: relative
+        }
+
+        .container-centered {
+            border: red 1px dashed;
+           
+
+            /* provide height/width or it will take the height/width of the container */
+            height: fit-content;
+            width: 300px;
+
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .screen-centered {
+            border: green 1px solid;
+
+            width: fit-content;
+            height:  fit-content;
+
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CONTAINER AND THE ELEMENT AT THE CENTER OF THE CONTAINER -->
+    <div class="container">
+            <div class="container-centered" style="border: red 2px solid">
+                <p>I AM CENTERED INSIDE A BLUE-BORDERED CONTAINER WITH A SPECIFIED HEIGHT AND WIDTH</p>
+                
+            </div>
+        </div>
+
+
+    <!-- ELEMENT CENTERED IN THE SCREEN -->
+    <div class="screen-centered">
+        <p>I am absolutely centered at the center of your screen. <br> Try Resizing your window</p>
+    </div>
+
+</body>
+
+</html>
